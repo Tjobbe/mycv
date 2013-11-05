@@ -1,0 +1,113 @@
+//imports
+@import '_reset'
+@import '_colours'
+@import '_typography'
+
+//to the layout
+body
+	text-align: center
+	background: $lightGrey
+
+header
+	background: $darkBlue
+	padding: 6em 0 0
+	margin: 0 0 2em 0
+	h1
+		color: $lightGrey
+		margin: 0 0 4em 0
+		padding: 0
+
+.content
+	text-align: left
+	width: 90%
+	max-width: 35em /*target % context (700px % body font size (20px) )*/
+	margin: 0 auto
+	padding: 1em
+
+//navigation
+nav
+	background: $midGrey
+	border: 1px solid $darkGrey
+	margin: 0
+	text-align: center
+	width: 100%
+	@media screen and (max-width: 800px)
+		display: block
+	ul
+		margin: 0 auto
+		padding: 0
+		line-height: 1em
+		display: block
+		max-width: 35em
+		@media screen and (max-width: 800px)
+			display: block
+	li
+		margin: 0
+		display: inline-block
+		@media screen and (max-width: 680px)
+			display: block
+			overflow: auto
+			border-bottom: 1px solid $darkGrey
+			&:last-of-type
+				border: none
+	a
+		color: $black
+		background: $midGrey
+		display: block
+		padding: 0.6em
+		text-decoration: none
+		@media screen and (max-width: 800px)
+			padding: 0.25em
+		&:active
+			color: #FFF
+			background: #888888
+		&:visited
+			color: $black
+			background: $midGrey
+		&:hover
+			color: $black
+			background: #D5D5D5
+
+#skillSet
+	ul
+		background: rgba($orange,0.7)
+		border: 0.5em solid rgba($orange,0)
+		border-bottom: 0
+		margin: 0 0 2em 0
+		padding: 0
+		overflow: auto
+		li
+			background: rgba($orange,0.7)
+			padding: 2.5%
+			margin: 0 0 0.5em 0
+			list-style: none
+			color: white
+			width: 95%
+			display: block
+			clear: both
+			position: relative
+			&:after
+				content: attr(data-experience)"%"
+				background: rgba($black,0.5)
+				font-size: 16px
+				position: absolute
+				right: 0
+				top: 0
+				line-height: 1em
+				padding: 1.5em 1em
+				@media screen and (max-width: 800px)
+					position: relative
+					padding: 0
+					top: auto
+					right: auto
+					background: none
+					font-size: 1em
+					content: " - "attr(data-experience)"%"
+		@media screen and (max-width: 500px)
+			font-size: 0.7em
+
+footer
+	background: $darkBlue
+	padding: 2em 0
+	color: $lightGrey
+	font-size: 0.75em
