@@ -154,6 +154,16 @@ em {
   background: #3e83a7;
   color: #f7f7f7; }
 
+#pageTitle span:hover {
+  -webkit-animation: qad 1s infinite alternate; }
+
+@-webkit-keyframes qad {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0.2; } }
+
 body {
   text-align: center;
   background: #f7f7f7; }
@@ -229,6 +239,7 @@ nav {
   padding: 0;
   overflow: auto; }
   #skillSet ul li {
+    background: #a1692b;
     background: rgba(161, 105, 43, 0.7);
     padding: 2.5%;
     margin: 0 0 0.5em 0;
