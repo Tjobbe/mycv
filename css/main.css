@@ -248,7 +248,7 @@ nav {
     clear: both;
     position: relative; }
     #skillSet ul li:after {
-      content: attr(data-years);
+      content: attr(data-experience);
       background: rgba(0, 0, 0, 0.5);
       font-size: 16px;
       position: absolute;
@@ -264,7 +264,7 @@ nav {
           right: auto;
           background: none;
           font-size: 1em;
-          content: " - " attr(data-years); } }
+          content: " - " attr(data-experience); } }
   @media screen and (max-width: 500px) {
     #skillSet ul {
       font-size: 0.7em; } }

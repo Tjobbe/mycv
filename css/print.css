@@ -50,7 +50,7 @@ header{
 
 /*pop the %'age values in when printing*/
 #skillSet ul li:after {
-  content: " - " attr(data-experience)"%";
+  content: " - " attr(data-experience);
   float: none;
   position: relative;
   right: auto;
