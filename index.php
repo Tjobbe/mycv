@@ -148,15 +148,15 @@
 				<p>I read all my emails. If you have a role which you think might be of interest to me I'd love to hear from you. Please provide as much information as you can such as location, skill set and the type of company it is and the industry it is in. Thanks!</p>
 
 
-				<form method="post" action="contactengine.php">
+				<form method="post" action="process-form.php">
 
-					<label for="Name">Name:</label>
-					<input type="text" name="Name" />
-					<label for="City">City:</label>
-					<input type="text" name="City" />
-					<label for="Email">Email:</label>
-					<input type="text" name="Email" />
-					<label for="Message">Message:</label>
+					<label for="Name">Name:</label><br>
+					<input type="text" name="Name" /><br>
+					<label for="City">City:</label><br>
+					<input type="text" name="City" /><br>
+					<label for="Email">Email:</label><br>
+					<input type="text" name="Email" /><br>
+					<label for="Message">Message:</label><br>
 					<textarea name="Message" rows="20" cols="20"></textarea>
 
 					<div id="captcha-area">
@@ -164,8 +164,8 @@
 					<?php
 					
 					require_once('recaptchalib.php');
-					$publickey = "6LdmigAAAAAAAHJEZiIdo6bYZtwReBZavbXxGacx";
-					$privatekey = "6LdmigAAAAAAAPTBvc0XBOdlKn5dPyTgazNvmHBx";
+					$publickey = 	"6Ldp0OkSAAAAAGzS9_DvhOFzff1GRQIXOuVDzs6L";
+					$privatekey = "6Ldp0OkSAAAAAAeVjM3DoSlPM8EGsToW30_VO9Be";
 					
 					# the response from reCAPTCHA
 					$resp = null;
