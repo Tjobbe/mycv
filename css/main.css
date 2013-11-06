@@ -232,15 +232,11 @@ nav {
       background: #d5d5d5; }
 
 #skillSet ul {
-  background: rgba(161, 105, 43, 0.7);
-  border: 0.5em solid rgba(161, 105, 43, 0);
-  border-bottom: 0;
   margin: 0 0 2em 0;
   padding: 0;
   overflow: auto; }
   #skillSet ul li {
     background: #a1692b;
-    background: rgba(161, 105, 43, 0.7);
     padding: 2.5%;
     margin: 0 0 0.5em 0;
     list-style: none;
@@ -250,7 +246,7 @@ nav {
     clear: both;
     position: relative; }
     #skillSet ul li:after {
-      content: attr(data-experience) "%";
+      content: attr(data-years);
       background: rgba(0, 0, 0, 0.5);
       font-size: 16px;
       position: absolute;
@@ -266,7 +262,7 @@ nav {
           right: auto;
           background: none;
           font-size: 1em;
-          content: " - " attr(data-experience) "%"; } }
+          content: " - " attr(data-years); } }
   @media screen and (max-width: 500px) {
     #skillSet ul {
       font-size: 0.7em; } }

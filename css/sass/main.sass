@@ -71,15 +71,11 @@ nav
 
 #skillSet
 	ul
-		background: rgba($orange,0.7)
-		border: 0.5em solid rgba($orange,0)
-		border-bottom: 0
 		margin: 0 0 2em 0
 		padding: 0
 		overflow: auto
 		li
-			background: $orange /*this is for ie. of course*/
-			background: rgba($orange,0.7)
+			background: $orange
 			padding: 2.5%
 			margin: 0 0 0.5em 0
 			list-style: none
@@ -89,7 +85,7 @@ nav
 			clear: both
 			position: relative
 			&:after
-				content: attr(data-experience)"%"
+				content: attr(data-years)
 				background: rgba($black,0.5)
 				font-size: 16px
 				position: absolute
@@ -104,7 +100,7 @@ nav
 					right: auto
 					background: none
 					font-size: 1em
-					content: " - "attr(data-experience)"%"
+					content: " - " attr(data-years)
 		@media screen and (max-width: 500px)
 			font-size: 0.7em
 
