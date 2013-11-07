@@ -2,7 +2,7 @@ body, p, ul, ol, dl{
 	font-size: 14px;
 }
 
-header nav, #introduction, footer{
+header nav, #introduction, #contact, footer{
 	display: none;
 }
 

@@ -12,42 +12,42 @@ if (!$resp->is_valid) {
        "(reCAPTCHA said: " . $resp->error . ")");
 }
 
-$EmailFrom = Trim(stripslashes($_POST['Email']));
-$EmailTo = "me@tjob.be";
+$emailFrom = "example@example.com";
+$emailTo = "tjobbe@gmail.com";
 $Subject = "CV contact form submission";
-$Name = Trim(stripslashes($_POST['Name'])); 
-$City = Trim(stripslashes($_POST['City'])); 
-$Email = Trim(stripslashes($_POST['Email'])); 
-$Message = Trim(stripslashes($_POST['Message'])); 
+$name = Trim(stripslashes($_POST['name'])); 
+$phone = Trim(stripslashes($_POST['phone'])); 
+$email = Trim(stripslashes($_POST['email'])); 
+$message = Trim(stripslashes($_POST['message'])); 
 
 // validation
 $validationOK=true;
 if (!$validationOK) {
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.php\">";
   exit;
 }
 
 // prepare email body text
 $Body = "";
-$Body .= "Name: ";
-$Body .= $Name;
+$Body .= "name: ";
+$Body .= $name;
 $Body .= "\n";
-$Body .= "City: ";
-$Body .= $City;
+$Body .= "phone: ";
+$Body .= $phone;
 $Body .= "\n";
-$Body .= "Email: ";
-$Body .= $Email;
+$Body .= "email: ";
+$Body .= $email;
 $Body .= "\n";
-$Body .= "Message: ";
-$Body .= $Message;
+$Body .= "message: ";
+$Body .= $message;
 $Body .= "\n";
 
 // send email 
-$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+$success = mail($emailTo, $Subject, $Body, "From: <$emailFrom>");
 
 // redirect to success page 
 if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=/cv/thank-you.php\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=thank-you.php\">";
 }
 else{
   print "<meta http-equiv=\"refresh\" content=\"0;URL=error.php\">";

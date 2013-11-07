@@ -96,7 +96,7 @@ body {
   font-family: "source_sans_proregular";
   color: #333333; }
 
-p, ul, ol, dl {
+p, ul, ol, dl, form {
   line-height: 1.5em;
   margin: 0 0 2em 0; }
 
@@ -163,6 +163,66 @@ em {
 
   100% {
     opacity: 0.2; } }
+
+input, textarea {
+  clear: both;
+  display: block;
+  margin: 0 0 1em 0;
+  font-size: 1em;
+  font-family: "source_sans_proregular";
+  padding: 0.5em;
+  width: 95%;
+  border: 3px solid gainsboro;
+  background: #e9e9e9;
+  font-weight: normal; }
+  input:focus, textarea:focus {
+    background: #3e83a7;
+    color: #f7f7f7; }
+
+textarea {
+  height: 8em; }
+
+input.submit-button {
+  clear: both;
+  display: block;
+  margin: 0;
+  font-size: 18px;
+  font-family: "source_sans_proregular";
+  padding: 1em 2em;
+  width: auto;
+  background: #a1692b;
+  color: #f7f7f7;
+  border: none; }
+  input.submit-button:hover {
+    cursor: pointer;
+    background: #3e83a7; }
+  input.submit-button:active {
+    background: #144e6d; }
+
+#captcha-area {
+  overflow: auto;
+  clear: both;
+  display: block;
+  margin: 0 0 1em; }
+
+.recaptchatable {
+  line-height: 1px; }
+
+#recaptcha_area .recaptchatable .recaptcha_r7_c1 {
+  height: 3px; }
+
+#recaptcha_area .recaptchatable .recaptcha_r8_c1 {
+  height: 3px; }
+
+#recaptcha_area .recaptchatable .recaptcha_image_cell {
+  background-color: white !important; }
+
+#recaptcha_area .recaptchatable td {
+  vertical-align: top !important;
+  background-color: #d7d7d7; }
+
+.recaptchatable .recaptcha_r1_c1, .recaptchatable .recaptcha_r3_c1, .recaptchatable .recaptcha_r3_c3 {
+  background-color: transparent !important; }
 
 body {
   text-align: center;

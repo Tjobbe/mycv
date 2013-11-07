@@ -1,0 +1,57 @@
+input, textarea
+	clear: both
+	display: block
+	margin: 0 0 1em 0
+	font-size: 1em
+	font-family: "source_sans_proregular"
+	padding: 0.5em
+	width: 95%
+	border: 3px solid $darkGrey
+	background: $midGrey
+	font-weight: normal
+	&:focus
+		background: $midBlue
+		color: $lightGrey
+
+textarea
+	height: 8em
+
+input.submit-button
+	clear: both
+	display: block
+	margin: 0
+	font-size: 18px
+	font-family: "source_sans_proregular"
+	padding: 1em 2em
+	width: auto
+	background: $orange
+	color: $lightGrey
+	border: none
+	&:hover
+		cursor: pointer
+		background: $midBlue
+	&:active
+		background: $darkBlue
+
+#captcha-area
+	overflow: auto
+	clear: both
+	display: block
+	margin: 0 0 1em
+
+.recaptchatable
+	line-height: 1px
+
+#recaptcha_area .recaptchatable .recaptcha_r7_c1
+	background:url('http://www.google.com/recaptcha/api/img/white/sprite.png') -50px -53px no-repeat
+	height: 3px
+#recaptcha_area .recaptchatable .recaptcha_r8_c1
+	background:url('http://www.google.com/recaptcha/api/img/white/sprite.png') -50px -53px no-repeat
+	height: 3px
+#recaptcha_area .recaptchatable .recaptcha_image_cell
+	background-color: white!important
+#recaptcha_area .recaptchatable td
+	vertical-align: top!important
+	background-color: #d7d7d7
+.recaptchatable .recaptcha_r1_c1, .recaptchatable .recaptcha_r3_c1, .recaptchatable .recaptcha_r3_c3
+	background-color: transparent!important
