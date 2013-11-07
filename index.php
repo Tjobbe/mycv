@@ -151,10 +151,10 @@
 
 <form method="post" action="process-form.php">
 
-	<input type="text" name="name" />
-	<input type="text" name="phone" />
-	<input type="text" name="email" />
-	<textarea name="message"></textarea>
+	<input type="text" name="name" id="name" value="Your name:" />
+	<input type="tel" name="phone" id="phone" value="Telephone number:" />
+	<input type="email" name="email" id="email" value="Email address:" />
+	<textarea name="message">Your message:</textarea>
 
 	<div id="captcha-area">
 	
